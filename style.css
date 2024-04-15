@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px;
+}
+
+/* Center the content */
+.container {
+  max-width: 1200px; /* Increase max-width for larger screens */
+  margin: 0 auto;
+}
+
+/* Style the heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 36px; /* Larger font size */
+}
+
+/* Style the filter */
+#filter {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #555; /* Dark gray text color */
+}
+
+select {
+  padding: 10px; /* Increase padding for better clickability */
+  font-size: 16px;
+  width: 100%; /* Full width */
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Light gray border */
+  background-color: #fff; /* White background */
+}
+
+/* Style the cars container */
+#cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted minmax values for larger cards */
+  gap: 20px;
+}
+
+/* Style individual car */
+.car {
+  background-color: #ffffec; /* Light red background */
+  border-radius: 10px; /* Larger border radius */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  position: relative; /* Position relative for button positioning */
+}
+
+/* Style car image */
+.car-image {
+  display: block;
+  width: 100%;
+  border-radius: 10px; /* Larger border radius */
+  margin-bottom: 20px; /* Increased margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+}
+
+/* Style car details */
+.car-details {
+  font-size: 16px; /* Larger font size */
+}
+
+.car-details p {
+  margin-bottom: 10px; /* Increased margin */
+  color: #555; /* Dark gray text color */
+}
+
+/* Style toggle button */
+.toggle-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px; /* Increased padding */
+  border-radius: 50%;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  position: absolute;
+  top: 20px; /* Adjusted top position */
+  right: 20px; /* Adjusted right position */
+  z-index: 1; /* Ensure button is above other content */
+}
+
+/* Hover effect on toggle button */
+.toggle-btn:hover {
+  background-color: #555;
+}
